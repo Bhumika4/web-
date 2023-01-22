@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>forms</title>
+    <style>
+        body{
+            margin: 100px 450px;
+            background-color: black;
+        }
+        fieldset{
+            width: fit-content;
+            background-color: greenyellow;
+            border-left: 10px solid ghostwhite;
+            border-right: 10px solid ghostwhite;
+        }
+        #a{
+            background-color:ghostwhite;
+        }
+        table{
+            background-color: greenyellow;
+            border: none;
+        }
+        #b{
+            margin:0px 100px;
+            background-color: black;
+            color: ghostwhite;
+            border-radius: 25px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h3>Step 1: Your details</h3>
+            <table border="1">
+                <tr>
+                    <th>
+                        <label for="">Name</label>           
+                        <input id="a" type="text" placeholder="First and last name">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="">Email</label>
+                        <input id="a" type="email" placeholder="example@domain.com">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="">Phone</label>
+                        <input id="a" type="number" placeholder="Eg.+4475000000000">
+                    </th>
+                </tr>
+            </table>
+            <h3>Step 2: Delivery address</h3>
+            <table border="1">
+                <tr>
+                    <th>
+                        <label for="">Address</label>
+                        <input id="a" type="text" placeholder=" ">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="">Post code</label>
+                        <input id="a" type="text">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="">Country</label>
+                        <input id="a" type="text">
+                    </th>
+                </tr>
+            </table>
+            <h3>Step 3: Card details</h3>
+            <table border="1">
+                <tr>
+                    <th>
+                        <label for="card name">Card type</label>
+                        <input id="a" type="radio" name="card name">VISA
+                        <input id="a" type="radio" name="card name">AMEX
+                        <input id="a" type="radio" name="card name">MASTERCARD
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="">Card number</label>
+                        <input id="a" type="number">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="">Security code</label>
+                        <input id="a" type="text">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="">Name on card</label>
+                        <input id="a" type="text">
+                    </th>
+                </tr>
+            </table><br>
+            <input id="b" type="submit" value="BUY IT!">
+        </fieldset>
+    </form>
+</body>
+</html>
